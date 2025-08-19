@@ -1,0 +1,87 @@
+** start of styles.css **
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  padding: 20px;
+}
+
+.container {
+  background-color: white;
+  padding: 20px;
+  max-width: 400px;
+  margin: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+/* Style all inputs, selects, and textareas */
+input, select, textarea, button {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 12px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* First input (Full Name) special style */
+input:first-of-type {
+  border-radius: 20px;
+  background-color: #fafafa;
+}
+
+/* Focus styles */
+input:focus,
+textarea:focus {
+  border-color: #0077cc;
+  outline: none;
+}
+
+/* Valid and Invalid states */
+input:invalid,
+select:invalid,
+textarea:invalid {
+  border-color: red;
+}
+
+input:valid,
+select:valid,
+textarea:valid {
+  border-color: green;
+}
+
+/* Button hover */
+button:hover {
+  background-color: #0077cc;
+  color: white;
+  cursor: pointer;
+}
+
+/* Radio buttons */
+.radio-group input[type="radio"] {
+  width: auto;
+  margin-right: 5px;
+}
+
+/* Checked radio styles */
+.radio-group input[type="radio"]:checked {
+  border: 2px solid #0077cc;
+  background-color: #e0f0ff;
+  box-shadow: 0 0 5px #0077cc;
+}
+
+/* Change label text color when associated radio is checked */
+.radio-group input[type="radio"]:checked + label {
+  color: #0077cc;
+  font-weight: bold;
+}
+
+** end of styles.css **
+
